@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechFlow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <div class="logo">TechFlow</div>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#demo">Demo</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+          <button class="btn-primary mobile-signup" onclick="openModal()">Sign Up</button>
+        </nav>
+        <button class="btn-primary desktop-signup" onclick="openModal()">Sign Up</button>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section reveal" id="home">
+    <div class="hero container">
+      <div class="hero-text">
+        <h1>
+          Build Fast.<br />
+          <span>Scale Faster.</span>
+        </h1>
+        <p>
+          The all-in-one productivity platform for teams &amp; creators.
+          Streamline your workflow and achieve more together.
+        </p>
+        <button class="btn-primary" onclick="openModal()">Start Free Trial</button>
+      </div>
+      <div class="hero-img">
+        <img src="herosectionimage.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features container reveal" id="features">
+    <h2 class="anim-text">Why TechFlow?</h2>
+    <p class="subtitle anim-text">Everything you need to supercharge your productivity</p>
+
+    <div class="feature-grid">
+      <div class="card">
+        <div class="card-icon-wrap" style="background:#ede9fe;">
+          <div class="card-icon">👥</div>
+        </div>
+        <h3>Real-Time Collaboration</h3>
+        <p>Work together seamlessly with your team in real-time, no matter where you are.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon-wrap" style="background:#dcfce7;">
+          <div class="card-icon">📊</div>
+        </div>
+        <h3>Smart Analytics</h3>
+        <p>Get actionable insights with powerful analytics and reporting tools.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon-wrap" style="background:#dbeafe;">
+          <div class="card-icon">⚙️</div>
+        </div>
+        <h3>Custom Workflows</h3>
+        <p>Build and automate workflows that match your unique processes perfectly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon-wrap" style="background:#fee2e2;">
+          <div class="card-icon">☁️</div>
+        </div>
+        <h3>Cloud Sync</h3>
+        <p>Access your work from anywhere with secure cloud synchronization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / ALL IN ONE -->
+  <section class="about container reveal" id="demo">
+    <div class="about-img anim-left">
+      <img src="About section image.png" >
+    </div>
+    <div class="about-text anim-right">
+      <h2>
+        Everything You Need,<br />
+        <span>All in One Place</span>
+      </h2>
+      <p>
+        Our platform brings together all the tools you need to manage
+        projects, collaborate with teams, and track progress effortlessly.
+      </p>
+      <ul>
+        <li>✅ Intuitive drag-and-drop interface</li>
+        <li>✅ Advanced task management</li>
+        <li>✅ Seamless team communication</li>
+        <li>✅ Powerful automation tools</li>
+      </ul>
+      <button class="btn-purple" onclick="scrollToSection('features')">Explore Features</button>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials container reveal" id="testimonials">
+    <h2 class="anim-text">What Users Are Saying</h2>
+    <p class="subtitle anim-text">Don't just take our word for it</p>
+
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="avatar"><img src="first rating.png"></div>
+          <div>
+            <strong>Arjun</strong>
+            <p class="role">Product Manager</p>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p>"TechFlow changed how I work! The collaboration features are incredible, and my team has never been more productive."</p>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="avatar"><img src="Second Rating.png"></div>
+          <div>
+            <strong>Sarah L.</strong>
+            <p class="role">Software Engineer</p>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p>"A fantastic tool! My team loves this. It's intuitive, powerful, and has everything we need to stay organized and efficient."</p>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="avatar"><img src="thirdrating.png"></div>
+          <div>
+            <strong>Riya S.</strong>
+            <p class="role">Creative Director</p>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p>"The custom workflows save us hours every week. TechFlow has become an essential part of our daily operations."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta reveal" id="contact">
+    <div class="container cta-content">
+      <h2 class="anim-text">Ready to Boost Your Workflow?</h2>
+      <p class="anim-text">Join thousands of teams already using TechFlow to work smarter, not harder.</p>
+      <button class="btn-light" onclick="openModal()">Start Free Trial</button>
+      <p class="cta-note">No credit card required • 14-day free trial</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 class="logo">TechFlow</h3>
+        <p>Making productivity simple for teams and creators worldwide.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="#features">Features</a>
+        <a href="#">Integrations</a>
+        <a href="#">Pricing</a>
+        <a href="#">Enterprise</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Documentation</a>
+        <a href="#">Community</a>
+        <a href="#">API</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p class="copyright">Privacy Policy &nbsp;|&nbsp; Terms of Use &nbsp;&nbsp; © 2026 TechFlow. All rights reserved.</p>
+      <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.851s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.609.073-3.033.425-4.153 1.545C1.78 2.737 1.428 4.161 1.355 5.77.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.073 1.609.425 3.033 1.545 4.153 1.12 1.12 2.544 1.472 4.153 1.545C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 1.609-.073 3.033-.425 4.153-1.545 1.12-1.12 1.472-2.544 1.545-4.153.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.073-1.609-.425-3.033-1.545-4.153-1.12-1.12-2.544-1.472-4.153-1.545C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+    </div>
+  </footer>
+
+  <!-- SIGN UP MODAL -->
+  <div class="modal-overlay" id="signupModal" onclick="handleOverlayClick(event)">
+    <div class="modal-box">
+
+      <!-- SIGN UP FORM -->
+      <div id="formView">
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+        <div class="modal-logo">TechFlow</div>
+        <h2 class="modal-title">Create your account</h2>
+        <p class="modal-subtitle">Start your 14-day free trial. No credit card required.</p>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label>First Name</label>
+            <input type="text" id="firstName" placeholder="John" />
+            <span class="field-error-msg" id="err-firstName">First name is required.</span>
+          </div>
+          <div class="input-group">
+            <label>Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" />
+            <span class="field-error-msg" id="err-lastName">Last name is required.</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" id="emailInput" placeholder="john@company.com" />
+          <span class="field-error-msg" id="err-email">Please enter a valid email address.</span>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <div class="password-wrap">
+            <input type="password" id="passwordInput" placeholder="Min. 8 characters" />
+            <button class="toggle-pw" onclick="togglePassword()" type="button">👁</button>
+          </div>
+          <span class="field-error-msg" id="err-password">Password must be at least 8 characters.</span>
+        </div>
+
+        <div class="input-group">
+          <label>Company / Team Name <span class="optional">(optional)</span></label>
+          <input type="text" id="companyInput" placeholder="Acme Inc." />
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="agreeTerms" />
+          <label for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+        <span class="field-error-msg" id="err-terms" style="display:none; margin-bottom:8px;">You must agree to the terms to continue.</span>
+
+        <p class="error-msg" id="errorMsg"></p>
+
+        <button class="btn-modal-submit" onclick="handleSignup()">Create Free Account</button>
+
+        <p class="modal-login">Already have an account? <a href="#">Log in</a></p>
+      </div>
+
+      <!-- SUCCESS SCREEN -->
+      <div id="successView" style="display:none;">
+        <div class="success-icon">🎉</div>
+        <h2 class="modal-title">You're all set!</h2>
+        <p class="modal-subtitle">Welcome to TechFlow! Your account has been created successfully.</p>
+        <div class="success-info" id="successEmail"></div>
+        <button class="btn-modal-submit" onclick="closeModal()">Go to Dashboard →</button>
+        <p class="modal-login" style="margin-top:16px;">Check your email for a confirmation link.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
