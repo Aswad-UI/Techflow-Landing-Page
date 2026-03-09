@@ -562,6 +562,22 @@ footer a:hover {
     padding-bottom: 30px;
   }
 }
+/* Center about section on mobile */
+@media (max-width: 900px) {
+  .about {
+    text-align: center;
+  }
+
+  .about ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .about-text .btn-purple {
+    display: block;
+    margin: 28px auto 0;
+  }
+}
 @media (max-width: 900px) {
   .hero-img {
     margin-top: 0;
@@ -775,6 +791,10 @@ footer a:hover {
   font-weight: 600;
   color: #444;
   margin-bottom: 6px;
+  padding: 0;
+  margin-left: 02%;
+  text-align: left;
+  width: 100%;
 }
 
 .optional {
